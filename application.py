@@ -8,8 +8,8 @@ application = Flask(__name__)
 app=application
 
 ## Import ridge regressor and standard scaler pickle
-ridge_model = pickle.load(open("Models/ridge.pkl", 'rb'))
-standard_scaler= pickle.load(open("Models/scaler.pkl", 'rb'))
+ridge_model = pickle.load(open("models/ridge.pkl", 'rb'))
+standard_scaler= pickle.load(open("models/scaler.pkl", 'rb'))
 
 ## ROute for home page
 @app.route('/')
